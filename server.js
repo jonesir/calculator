@@ -7,7 +7,7 @@ app.use(express.static('public'));
 var routes = require("./api/routes");
 routes(app);
 
-if (! module.parent) {
+if (!module.parent) {
   app.listen(port);
 }
 
